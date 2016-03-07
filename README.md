@@ -1,15 +1,14 @@
-# seproject-team-template
+# Sugia Project
 
-A template repository with wiki for a team project at JCE's software engineering course
+What is Sugia?
+A network of networks of Jewish responces to contemporary Dilemmas
 
-![project logo (this one is taken from basecamp)](http://klipfolio.com/sites/default/files/integrations/basecamp.png)
+![project logo](https://github.com/avigailab/Sugia/blob/master/images/sugia-logo.GIF)
 
-## Please visit our [live application](https://demo.reactstarterkit.com/)
+## Please visit our [live application](https://github.com/avigailab/Sugia)
 - Alright, currently only a landing page...
 
-[![Join the chat at https://gitter.im/robi-y/seproject-team-template](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/robi-y/seproject-team-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-## [Issue Board](https://huboard.com/robi-y/seproject-team-template#/)
+[![Join the chat at https://gitter.im/wall-et/OPNetpeople](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/wall-et/OPNetpeople?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Disclaimer
 This project is developed as part of the requirements for a [software engineering course](https://github.com/jce-il/se-class/wiki) at the software engineering department - [Azrieli College of Engineering](http://www.jce.ac.il/), Jerusalem, Israel.
@@ -21,7 +20,7 @@ Please visit our wiki for furthur project info:
 ### [Team Page](../../wiki/team)
 
 ### Project Documents
-- [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
+- [Project Idea](https://github.com/avigailab/Sugia/blob/master/doc/sugia.docx) ([Presentation](https://github.com/avigailab/Sugia/blob/master/doc/Sugia.pptx))
 - [Project Inception](../../wiki/inception)
 - [Software Requirements Specification](../../wiki/srs)
 - [Software Design Specification](../../wiki/sds)
