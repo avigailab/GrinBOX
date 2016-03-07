@@ -18,7 +18,7 @@ Please visit our wiki for furthur project info:
 ### [User Manual](../../wiki/user-manual) (empty)
 
 ### [Team Page](../../wiki/team)
-
+![team page](https://github.com/avigailab/Sugia/blob/master/images/team.jpg)
 ### Project Documents
 - [Project Idea](https://github.com/avigailab/Sugia/blob/master/doc/sugia.docx) ([Presentation](https://github.com/avigailab/Sugia/blob/master/doc/Sugia.pptx))
 - [Project Inception](../../wiki/inception)
