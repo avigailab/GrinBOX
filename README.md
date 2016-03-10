@@ -1,11 +1,14 @@
-# Sugia Project
+# GrinBOX Project
 
-What is Sugia?
-A network of networks of Jewish responces to contemporary Dilemmas
+A rising star in the world of game manufacturing, GrinBox develops uniquely entertaining games, featuring special magnetic properties, that are popular around the world. These include Magnetiz, the world's first layered magnet storyboard and SmartTime, an interactive magnetized game box. These original, patented products have become the center of attention at many international toy exhibitions.
+ 
+GrinBox has revolutionized the traditional board game making it not only highly entertaining but also educational, developing children's imagination, emotional intelligence and cognitive skills. It is these innovative qualities that have enabled GrinBox games to surge ahead of the competition.
+ 
+Currently GrinBox products are available in 6 languages: English, French, Spanish, Russian, Hungarian and Czech.
 
-![project logo](https://github.com/avigailab/Sugia/blob/master/images/sugia-logo.GIF)
+![project logo](https://github.com/avigailab/Sugia/blob/master/images/logo.png)
 
-## Please visit our [live application](https://github.com/avigailab/Sugia)
+## Please visit our [live application](http://grin-box.com/)
 - Alright, currently only a landing page...
 
 [![Join the chat at https://gitter.im/wall-et/OPNetpeople](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/wall-et/OPNetpeople?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
