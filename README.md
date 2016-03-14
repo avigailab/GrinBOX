@@ -23,7 +23,7 @@ Please visit our wiki for furthur project info:
 ### [Team Page](../../wiki/team)
 ![team page](https://github.com/avigailab/Sugia/blob/master/images/team.jpg)
 ### Project Documents
-- [Project Idea](https://github.com/avigailab/Sugia/blob/master/doc/sugia.docx) ([Presentation](https://github.com/avigailab/Sugia/blob/master/doc/Sugia.pptx))
+- [Project Idea](https://github.com/avigailab/GrinBOX/blob/master/doc/%D7%9E%D7%A1%D7%9E%D7%9A%20%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98.docx) ([Presentation](https://github.com/avigailab/GrinBOX/blob/master/doc/Presentation-embedded.ppsx))
 - [Project Inception](../../wiki/inception)
 - [Software Requirements Specification](../../wiki/srs)
 - [Software Design Specification](../../wiki/sds)
