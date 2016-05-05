@@ -8,8 +8,8 @@ Currently GrinBox products are available in 6 languages: English, French, Spanis
 
 ![project logo](https://github.com/avigailab/Sugia/blob/master/images/logo.png)
 
-## Please visit our [live application](http://grin-box.com/)
-- Alright, currently only a landing page...
+## Please visit our [live application](http://grinbox.azurewebsites.net)
+
 
 [![Join the chat at https://gitter.im/wall-et/OPNetpeople](https://badges.gitter.im/robi-y/seproject-team-template.svg)](https://gitter.im/wall-et/OPNetpeople?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -18,7 +18,7 @@ This project is developed as part of the requirements for a [software engineerin
 
 Please visit our wiki for furthur project info: 
 
-### [User Manual](../../wiki/user-manual) (empty)
+### [User Manual](../../wiki/user-manual) 
 
 ### [Team Page](../../wiki/team)
 ![team page](https://github.com/avigailab/Sugia/blob/master/images/team.jpg)
