@@ -701,4 +701,16 @@ module.exports = function (grunt) {
     'includeSource:server'
   ]);
 
+  grunt.registerTask('make-dev',[
+      //ds'jsonlint:models',
+      //'sass',
+      'clean:server',
+      'includeSource:server',
+      'ngconstant:development',
+      'loopback_sdk_angular:development',
+      'wiredep:server',
+      'concurrent:server',
+      'autoprefixer']
+  );
+
 };
