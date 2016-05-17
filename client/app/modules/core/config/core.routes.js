@@ -26,7 +26,7 @@
          })
  
          .state('app', {
-            abstract: true,
+           abstract: true,
            url: '',
             templateUrl: 'modules/core/views/app1.html'
            //controller: 'MainCtrl'
