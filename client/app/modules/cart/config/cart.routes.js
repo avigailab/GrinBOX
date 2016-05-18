@@ -10,8 +10,22 @@
           templateUrl: 'modules/cart/views/main.html'
         })
         .state('app.cart.list', {
+          url: '',
+          templateUrl: 'modules/notes/views/list.html',
+          controllerAs: 'ctrl',
+          controller: function (cartProducts) {
+            this.cartProductsArray = cartProducts;
+          },
+          resolve: {
+            cartProducts: function (CartService) {
+              return CartService.getProducts();//to service
+            }
+          }
+        })
+        .state('app.cart.checkout', {
           url: '/checkout',
-          templateUrl: 'modules/cart/views/list.html',
+          //templateUrl: 'modules/cart/views/list.html',
+          template: "<h1>checking out the cart</h1>"
           controllerAs: 'ctrl',
           controller: function (cartProducts) {
             this.cartProductsArray = cartProducts;
@@ -44,7 +58,7 @@
               return ProductsService.getProduct($stateParams.productId);
             }
           }
-        })
+        });
         /*
         .state('app.notes.list', {
           url: '',
@@ -128,7 +142,7 @@
               return NotesService.getNote($stateParams.id);
             }
           }
-        })*/;
+        })*/
     });
 
 })();

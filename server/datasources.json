@@ -3,10 +3,6 @@
     "name": "db",
     "connector": "memory"
   },
-  "mydb": {
-    "name": "mydb",
-    "connector": "mongodb",
-  },
   "transient": {
     "name": "transient",
     "connector": "transient"

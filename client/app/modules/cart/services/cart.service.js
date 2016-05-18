@@ -8,6 +8,11 @@
         if(!$scope.cartProducts) $scope.cartProducts = [];
         $scope.cartProducts.push(productId);
       };
+
+      this.getProducts = function(){
+        if(!$scope.cartProducts) $scope.cartProducts = [];
+        return $scope.cartProducts;
+      }
       /*
       this.getNotes = function () {
         return Note.find().$promise;
