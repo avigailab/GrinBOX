@@ -51,7 +51,7 @@
           });
   
 
-      $urlRouterProvider.otherwise('/router');
+      $urlRouterProvider.otherwise('/home');
     });
 
 })();
