@@ -9,9 +9,11 @@
    **/
   angular
     .module('com.module.core')
-    .controller('HomeCtrl', function ($scope, $rootScope) {
+    .controller('HomeCtrl', function ($scope, $rootScope,Product) {
       $scope.count = {};
       $scope.boxes = $rootScope.dashboardBox;
+      var products= Product.find({});	
+      console.log("product",products);	
     });
 
 })();

@@ -1,4 +1,18 @@
-<div style="width:100%">
+<div style="width:100%" >
+    <product ng-repeat="product in products">
+	<a class="projectObj" href="#!/project/product2" style="background-color:#3f91d2">	
+        <div class="wrap">
+            <div class="name">{{product.name}}</div>
+	    <div class="price">{{product.price}} </div>	
+            <img class="img" src="images/element.png" />
+        </div>
+	</a>
+    </product>
+
+
+
+
+
     <a class="projectObj" href="#!/project/product1" style="background-color:#87b822">
         <div class="wrap">
             <div class="name">Product #1</div>
@@ -23,7 +37,8 @@
             <img class="img" src="images/element.png" />
         </div>
     </a>
-    <ng-include src="'pages/footer.html'"></ng-include>
+    
+    <ng-include src="footer.html"></ng-include>
 </div>
 
 <script>

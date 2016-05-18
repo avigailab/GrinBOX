@@ -34,13 +34,13 @@
          .state('app.home', {
             url: '/home',
            //templateUrl: 'modules/core/views/index.html'
-            templateUrl: 'modules/core/views/index.html'
-           //controller: 'HomeCtrl'
+            templateUrl: 'modules/core/views/index.html',
+            controller: 'HomeCtrl'
         })
          .state('app.privacy', {
            url: '/privacy',
             templateUrl: 'modules/core/views/privacy.html',
-           controller: 'PrivacyCtrl',
+           controller: 'HomeCtrl',
             activetab: 'privacy'
           })
           .state('app.abouty', {
