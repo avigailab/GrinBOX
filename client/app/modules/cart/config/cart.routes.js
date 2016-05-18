@@ -4,12 +4,12 @@
     .module('com.module.cart')
     .config(function ($stateProvider) {
       $stateProvider
-        .state('app.cart', {
+        .state('admin.cart', {
           abstract: true,
           url: '/cart',
           templateUrl: 'modules/cart/views/main.html'
         })
-        .state('app.cart.list', {
+        .state('admin.cart.list', {
           url: '',
           templateUrl: 'modules/notes/views/list.html',
           controllerAs: 'ctrl',
@@ -22,10 +22,10 @@
             }
           }
         })
-        .state('app.cart.checkout', {
+        .state('admin.cart.checkout', {
           url: '/checkout',
           //templateUrl: 'modules/cart/views/list.html',
-          template: "<h1>checking out the cart</h1>"
+          template: "<h1>checking out the cart</h1>",
           controllerAs: 'ctrl',
           controller: function (cartProducts) {
             this.cartProductsArray = cartProducts;
@@ -36,7 +36,7 @@
             }
           }
         })
-        .state('app.cart.add', {
+        .state('admin.cart.add', {
           url: ':productId/add',
           templateUrl: '',
           controllerAs: 'ctrl',
