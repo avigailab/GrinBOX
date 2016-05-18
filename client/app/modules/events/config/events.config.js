@@ -6,7 +6,7 @@
       $rootScope.addMenu(gettextCatalog.getString('Events'), 'app.events.list', 'fa-calendar-o');
 
       Event.find(function (data) {
-        $rootScope.addDashboardBox('Events', 'bg-purple', 'ion-calendar', data.length, 'app.events.list');
+       /* $rootScope.addDashboardBox('Events', 'bg-purple', 'ion-calendar', data.length, 'app.events.list');*/
       });
 
     });
