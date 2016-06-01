@@ -10,6 +10,7 @@
    */
   angular
     .module('loopbackApp', [
+            'jkuri.gallery',
       'angular-loading-bar',
       'angular.filter',
       'angularBootstrapNavTree',

@@ -29,6 +29,23 @@
         });
       };
 
-    });
+    })
+    .controller('LabCtrl', function () 
+        {
+
+        })
+        .controller('GalleryCtrl', function () 
+        {
+                  var self = this;
+        self.images = [
+          {thumb: 'images/1.png', img: 'images/1.png'},
+              {thumb: 'images/2.png', img: 'images/2.png'},
+              {thumb: 'images/3.png', img: 'images/3.png'},
+              {thumb: 'images/4.png', img: 'images/4.png'},
+              {thumb: 'images/5.png', img: 'images/5.png'},
+              {thumb: 'images/6.png', img: 'images/6.png'}
+        ];
+
+        });
 
 })();

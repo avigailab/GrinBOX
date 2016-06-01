@@ -25,6 +25,8 @@
                 <ul>
                     <li><a id="workBtn" href="#/home" ng-class="{activeSmall:part == 'projects'}" >Home</a></li>
                     <li><a id="privacyBtn" href="#/privacy" ng-class="{activeSmall:part == 'privacy'}">Games</a></li>
+                    <li><a id="labBtn" href="#/lab" ng-class="{activeSmall:part == 'lab'}">Lab</a></li>
+                    <li><a id="galleryBtn" href="#/gallery" ng-class="{activeSmall:part == 'gallery'}">Gallery</a></li>
                     <li><a id="aboutBtn" href="#/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
                     <li style="margin-right:0px"><a id="contactBtn" class="active" href="javascript: void(0)" ng-click="showForm()">Contact Us</a></li>
                 </ul>
@@ -54,7 +56,7 @@
 
     <!-- main content -->
     <div style="position:relative">
-    <aside ui-view class="right-side at-view-fade-in at-view-fade-out">
+    <aside ui-view class="at-view-fade-in at-view-fade-out">
 
     </aside>
     </div>

@@ -48,6 +48,18 @@
             templateUrl: 'modules/core/views/about.html',
             controller: 'AboutCtrl',
             activetab: 'about'
+          })
+          .state('app.lab', {
+            url: '/lab',
+            templateUrl: 'modules/core/views/lab.html',
+            controller: 'LabCtrl',
+            activetab: 'lab'
+          })
+          .state('app.gallery', {
+            url: '/gallery',
+            templateUrl: 'modules/core/views/gallery.html',
+            controller: 'GalleryCtrl',
+            activetab: 'gallery'
           });
   
 
