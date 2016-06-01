@@ -38,12 +38,12 @@
         {
                   var self = this;
         self.images = [
-          {thumb: 'images/1.png', img: 'images/1.png'},
-              {thumb: 'images/2.png', img: 'images/2.png'},
-              {thumb: 'images/3.png', img: 'images/3.png'},
-              {thumb: 'images/4.png', img: 'images/4.png'},
-              {thumb: 'images/5.png', img: 'images/5.png'},
-              {thumb: 'images/6.png', img: 'images/6.png'}
+          {thumb: 'images/i1.jpg', img: 'images/i1.jpg'},
+              {thumb: 'images/i2.jpg', img: 'images/i2.jpg'},
+              {thumb: 'images/i3.jpg', img: 'images/i3.jpg'},
+              {thumb: 'images/i4.jpg', img: 'images/i4.jpg'},
+              {thumb: 'images/i5.jpg', img: 'images/i5.jpg'},
+              {thumb: 'images/i6.jpg', img: 'images/i6.jpg'}
         ];
 
         });
