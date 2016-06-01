@@ -112,7 +112,6 @@ body.fixed .wrapper {
 /* Content */
 .content {
   padding: 20px 15px;
-  background: #f9f9f9;
   overflow: auto;
 }
 /* Utility */
@@ -2571,14 +2570,12 @@ Component: timeline
 }
 /* skin-blue logo */
 .skin-blue .logo {
-  background-color: #367fa9;
   color: #f9f9f9;
 }
 .skin-blue .logo > a {
   color: #f9f9f9;
 }
 .skin-blue .logo:hover {
-  background: #357ca5;
 }
 /* skin-blue content header */
 .skin-blue .right-side > .content-header {
