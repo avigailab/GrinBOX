@@ -12,8 +12,8 @@
     .controller('HomeCtrl', function ($scope, $rootScope,Product) {
       $scope.count = {};
       $scope.boxes = $rootScope.dashboardBox;
-      var products= Product.find({});	
-      console.log("product",products);	
+      $scope.products=Product.find({});
+      console.log("product",$scope.products);	
     });
 
 })();
