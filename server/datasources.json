@@ -6,5 +6,12 @@
   "transient": {
     "name": "transient",
     "connector": "transient"
-  }
+  },
+  "container": {
+        "name": "container",
+        "connector": "loopback-component-storage",
+        "provider": "filesystem",
+        "root": "./uploads"
+   }
+
 }
