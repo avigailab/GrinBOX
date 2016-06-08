@@ -1,13 +1,16 @@
-<div style="width:100%" >
-    <product ng-repeat="product in products">
-	<a class="projectObj" href="#!/project/product2" style="background-color:#3f91d2">	
-        <div class="wrap">
-            <div class="name">{{product.name}}</div>
-	    <div class="price">{{product.price}} </div>	
+<div style="width:100%">
+    <product ng-repeat="product in products" ng-controller="singleProductCtrl">
+	
+	<a class="projectObj" style="background-color:{{colors[$index%4]}};height:350px;width:350px;margin-top:5px;border-radius:20px;" ng-click="clickToOpen()">	
+        <div style="padding: 30px 30px 30px;" {{colors[$index%4]}}>
+            <div class="name" {{product.name}} >{{product.name}}</div>
             <img class="img" src="images/element.png" />
+	    <div class="price" {{product.price}}>Price:&nbsp{{product.price}}$ </div>	
         </div>
 	</a>
     </product>
+
+
     
     <ng-include src="footer.html"></ng-include>
 </div>

@@ -39,7 +39,8 @@
     "angular-scenario": "1.5.2",
     "angular-schema-form": "0.8.3",
     "angular-schema-form-ui-select": "0.1.1",
-    "ngGallery": "*"
+    "ngGallery": "*",
+    "ng-dialog": "^0.6.1"
   },
   "devDependencies": {
     "angular-mocks": "1.3",

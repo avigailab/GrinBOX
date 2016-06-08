@@ -18,6 +18,7 @@
       'btford.markdown',
       'oitozero.ngSweetAlert',
       'config',
+      'ngDialog',
       'formly',
       'formlyBootstrap',
       'lbServices',
