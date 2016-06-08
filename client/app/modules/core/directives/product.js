@@ -12,7 +12,7 @@
     .directive('product', function () {
 	 console.log("Products directive");
       return {
-        template: '<div>Product</div>',
+       // template: '<div>Product</div>',
         restrict: 'EA',
         link: function postLink (scope, element, attrs) {
             console.log("Products directive");

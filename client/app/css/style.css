@@ -134,22 +134,26 @@ footer .copyright {
 /* other objects */
 .projectObj {
   color:#fff;
-  display:block;
+  display:inline-block;
 }
 .projectObj .name {
   float:left;
-  font-size:4em;
+  font-size:50px;
   font-weight:100;
   position:absolute;
   width:42%;
+  padding-top:10px;
 }
 .projectObj .img {
   float:right;
   margin-bottom:5%;
-  margin-top:5%;
-  width:30%;
+  margin-top:30%;
+  width:60%;
+  margin-right:20%;
 }
-
+.projectObj .price{
+  margin-top:92%;	
+}
 .paddRow {
   background-color:#dadada;
   color:#818181;
