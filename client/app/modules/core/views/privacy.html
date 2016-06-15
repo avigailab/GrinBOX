@@ -1,4 +1,4 @@
-<div style="width:100%">
+<div style="width:100%" isotope-grid="elementsList" isotope-reload-event="reload-elements" isotope-layout-mode="fitRows" isotope-item-selector="div">
     <product ng-repeat="product in products" ng-controller="singleProductCtrl">
 	
 	<a class="projectObj" style="background-color:{{colors[$index%4]}};height:350px;width:350px;margin-top:5px;border-radius:20px;" ng-click="clickToOpen()">	
@@ -9,7 +9,6 @@
         </div>
 	</a>
     </product>
-
 
     
     <ng-include src="footer.html"></ng-include>
