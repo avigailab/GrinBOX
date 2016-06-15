@@ -47,15 +47,15 @@
     "public": false
   },
   "Page": {
-    "dataSource": "db",
+    "dataSource": "grinbox_dev",
     "public": true
   },
   "Note": {
-    "dataSource": "db",
+    "dataSource": "grinbox_dev",
     "public": true
   },
   "Post": {
-    "dataSource": "db",
+    "dataSource": "grinbox_dev",
     "public": true
   },
   "Setting": {
@@ -63,15 +63,15 @@
     "public": true
   },
   "Product": {
-    "dataSource": "db",
+    "dataSource": "grinbox_dev",
     "public": true
   },
   "Category": {
-    "dataSource": "db",
+    "dataSource": "grinbox_dev",
     "public": true
   },
   "Event": {
-    "dataSource": "db",
+    "dataSource": "grinbox_dev",
     "public": true
   },
   "AuthProvider": {
@@ -84,6 +84,10 @@
   },
   "Meta": {
     "dataSource": "db",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "container",
     "public": true
   }
 }
