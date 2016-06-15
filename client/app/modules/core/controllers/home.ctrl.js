@@ -25,7 +25,7 @@
 
     .controller('UploadController', function($scope, FileUploader,$location) {
         var uploader = $scope.uploader = new FileUploader({
-            url: 'api/products/upload'
+            url: '/api/containers/products/upload'
         });
 
         // FILTERS

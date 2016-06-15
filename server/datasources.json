@@ -8,10 +8,16 @@
     "connector": "transient"
   },
   "container": {
-        "name": "container",
-        "connector": "loopback-component-storage",
-        "provider": "filesystem",
-        "root": "./uploads"
-   }
-
+    "name": "container",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./uploads"
+  },
+  "grinbox_dev": {
+    "name": "grinbox_dev",
+    "connector": "mongodb",
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "grinbox-dev"
+  }
 }
