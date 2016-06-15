@@ -1,0 +1,70 @@
+<div style="width:100%">
+    <product ng-repeat="product in products" ng-controller="singleProductCtrl">
+	
+	<a class="projectObj" style="background-color:{{colors[$index%4]}};height:350px;width:350px;margin-top:5px;border-radius:20px;" ng-click="clickToOpen()">	
+        <div style="padding: 30px 30px 30px;" {{colors[$index%4]}}>
+            <div class="name" {{product.name}} >{{product.name}}</div>
+            <img class="img" src="images/element.png" />
+	    <div class="price" {{product.price}}>Price:&nbsp{{product.price}}$ </div>	
+        </div>
+	</a>
+    </product>
+
+
+    
+    <ng-include src="footer.html"></ng-include>
+</div>
+
+<script>
+$('.projectObj').bind('click', function (e) {
+    e.preventDefault();
+
+    var me = this;
+    var width = $(me).width() / 1.5;
+    $(me).find('.wrap').width($(me).find('.wrap').width());
+
+    $(me).animate({
+        opacity: 0,
+        marginLeft: -width
+    }, 500);
+
+    var delayN = 150;
+    var delayP = 150;
+
+    var nextEl = $(me).nextAll('.projectObj');
+    var prevEl = $(me).prevAll('.projectObj');
+
+    nextEl.each(function (index, elem) {
+        setTimeout(function () {
+            
+            $(elem).find('.wrap').width($(elem).find('.wrap').width());
+
+            $(elem).animate({
+                opacity: 0,
+                marginLeft: -width
+              }, 500, function () {
+            });
+        }, delayN);
+        delayN += 100;
+    });
+
+    prevEl.each(function (index, elem) {
+        setTimeout(function () {
+            $(elem).find('.wrap').width($(elem).find('.wrap').width());
+
+            $(elem).animate({
+                opacity: 0,
+                marginLeft: -width
+              }, 500, function () {
+            });
+        }, delayP);
+        delayP += 100;
+    });
+
+    setTimeout(function () {
+        document.location = $(me).attr('href');
+    },1000)
+
+    return false;
+});
+</script>
