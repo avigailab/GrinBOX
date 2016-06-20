@@ -31,19 +31,19 @@
 
     })
     .controller('LabCtrl', function ($scope,Post){
-       $scope.posts=Post.find({});
-       console.log("posts==>",$scope.posts);
+       $scope.posts=Post.find({limit: 5});
+       console.log("posts1==>",$scope.posts);
     })
     .controller('GalleryCtrl', function () 
     {
       var self = this;
       self.images = [
          {thumb: 'https://i.ytimg.com/vi/qriRMGqares/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/qriRMGqares/maxresdefault.jpg'},
--              {thumb: 'https://i.ytimg.com/vi/H08vJM177Yo/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/H08vJM177Yo/maxresdefault.jpg'},
--              {thumb: 'https://lh3.googleusercontent.com/ZkcAqtzZUutGCM27ae1T4FvzjFNzb1LpecZJnvn4SKv7UfoiT8Rc-jUYkcToNW84zng=h900', img: 'https://lh3.googleusercontent.com/ZkcAqtzZUutGCM27ae1T4FvzjFNzb1LpecZJnvn4SKv7UfoiT8Rc-jUYkcToNW84zng=h900'},
--              {thumb: 'https://i.ytimg.com/vi/0Y7N7kaxYz4/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/0Y7N7kaxYz4/maxresdefault.jpg'},
--              {thumb: 'http://bussin3ss.files.wordpress.com/2012/08/free-play-angry-birds-vs-zombies-games-online.jpg', img: 'http://bussin3ss.files.wordpress.com/2012/08/free-play-angry-birds-vs-zombies-games-online.jpg'},
--              {thumb: 'https://i.ytimg.com/vi/J0VoEvlz3BU/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/J0VoEvlz3BU/maxresdefault.jpg'}
+              {thumb: 'https://i.ytimg.com/vi/H08vJM177Yo/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/H08vJM177Yo/maxresdefault.jpg'},
+             {thumb: 'https://lh3.googleusercontent.com/ZkcAqtzZUutGCM27ae1T4FvzjFNzb1LpecZJnvn4SKv7UfoiT8Rc-jUYkcToNW84zng=h900', img: 'https://lh3.googleusercontent.com/ZkcAqtzZUutGCM27ae1T4FvzjFNzb1LpecZJnvn4SKv7UfoiT8Rc-jUYkcToNW84zng=h900'},
+              {thumb: 'https://i.ytimg.com/vi/0Y7N7kaxYz4/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/0Y7N7kaxYz4/maxresdefault.jpg'},
+              {thumb: 'http://bussin3ss.files.wordpress.com/2012/08/free-play-angry-birds-vs-zombies-games-online.jpg', img: 'http://bussin3ss.files.wordpress.com/2012/08/free-play-angry-birds-vs-zombies-games-online.jpg'},
+              {thumb: 'https://i.ytimg.com/vi/J0VoEvlz3BU/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/J0VoEvlz3BU/maxresdefault.jpg'}
       ];
 
     });

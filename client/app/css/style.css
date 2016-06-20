@@ -26,6 +26,12 @@ h1 {
   font-size:3.5em;
   font-weight:100;
 }
+.page-title{
+  font-size: 65px;
+  color: rgb(170, 170, 170);
+  padding-bottom: 50px;
+  text-align: center;
+}
 p {
   font-size:18px;
 }
