@@ -13,7 +13,7 @@
       $scope.count = {};
       $scope.boxes = $rootScope.dashboardBox;
       $scope.products=Product.find({});
-      $scope.colors=['#60298C','rgb(63, 145, 210)','#ffcc66','#ff5050'];	
+      $scope.colors=['#67962C','rgb(63, 145, 210)','#ffcc66','#ff5050'];	
       console.log("product",$scope.products);	
     })
 /*
