@@ -46,6 +46,6 @@
               {thumb: 'https://i.ytimg.com/vi/J0VoEvlz3BU/maxresdefault.jpg', img: 'https://i.ytimg.com/vi/J0VoEvlz3BU/maxresdefault.jpg'}
         ];
 
-        });
+    });
 
 })();

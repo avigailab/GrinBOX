@@ -55,11 +55,12 @@
           url: '/:productId/edit',
           templateUrl: 'modules/products/views/form.html',
           controllerAs: 'ctrl',
-          controller: function ($state, ProductsService, categories, product) {
+          controller: function ($state, ProductsService, categories, product,$rootScope) {
             this.categories = categories;
             this.product = product;
             this.formFields = ProductsService.getFormFields(categories);
             this.formOptions = {};
+            $rootScope.currentProductId = product.id;
             this.submit = function () {
               ProductsService.upsertProduct(this.product).then(function () {
                 $state.go('^.list');

@@ -40,6 +40,7 @@
       'angular-underscore/filters',
       'schemaForm',
       'ui.select',
+      'iso',
       'com.module.core',
       'com.module.about',
       'com.module.browser',
@@ -51,6 +52,7 @@
       'com.module.products',
       'com.module.sandbox',
       'com.module.settings',
+      'com.module.cart',
       'com.module.users'
     ])
     .run(function ($rootScope, $cookies, gettextCatalog) {
