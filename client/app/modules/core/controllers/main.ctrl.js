@@ -30,22 +30,22 @@
       };
 
     })
-    .controller('LabCtrl', function () 
-        {
+    .controller('LabCtrl', function ($scope,Post){
+       $scope.posts=Post.find({});
+       console.log("posts==>",$scope.posts);
+    })
+    .controller('GalleryCtrl', function () 
+    {
+      var self = this;
+      self.images = [
+        {thumb: 'images/i1.jpg', img: 'images/i1.jpg'},
+            {thumb: 'images/i2.jpg', img: 'images/i2.jpg'},
+            {thumb: 'images/i3.jpg', img: 'images/i3.jpg'},
+            {thumb: 'images/i4.jpg', img: 'images/i4.jpg'},
+            {thumb: 'images/i5.jpg', img: 'images/i5.jpg'},
+            {thumb: 'images/i6.jpg', img: 'images/i6.jpg'}
+      ];
 
-        })
-        .controller('GalleryCtrl', function () 
-        {
-                  var self = this;
-        self.images = [
-          {thumb: 'images/i1.jpg', img: 'images/i1.jpg'},
-              {thumb: 'images/i2.jpg', img: 'images/i2.jpg'},
-              {thumb: 'images/i3.jpg', img: 'images/i3.jpg'},
-              {thumb: 'images/i4.jpg', img: 'images/i4.jpg'},
-              {thumb: 'images/i5.jpg', img: 'images/i5.jpg'},
-              {thumb: 'images/i6.jpg', img: 'images/i6.jpg'}
-        ];
-
-        });
+    });
 
 })();
