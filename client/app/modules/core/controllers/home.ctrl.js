@@ -9,30 +9,51 @@
    **/
   angular
     .module('com.module.core')
-    .controller('HomeCtrl', function ($scope, $rootScope,Product) {
+    .controller('HomeCtrl', function ($scope, $rootScope,Product,ngDialog) {
       $scope.count = {};
       $rootScope.countItem=0;
-      $scope.cartItems=[];
+      $rootScope.cartItems=[];
       $scope.boxes = $rootScope.dashboardBox;
       var proArr =Product.find({}).$promise.then(function(res){
         $scope.products = res;  
         res.forEach(function(product){
-          console.log("one product",product);
+          //console.log("one product",product);
         });
       });
       
       $scope.colors=['#67962C','rgb(63, 145, 210)','#ffcc66','#ff5050'];	
       //console.log("products",proArr);
-      $scope.addToCart =function(product){
-          $scope.cartItems.push(product);
+      $rootScope.addToCart =function(product){
+        var index= $rootScope.cartItems.indexOf(product);
+          if(index != -1)
+            $rootScope.cartItems[index].count ++;
+          else{
+            product.count = 1;
+            $rootScope.cartItems.push(product);
+          }
+          console.log("$scope.cartItems",$scope.cartItems);
           $rootScope.countItem++;
-          console.log("product------",$rootScope.countItem);
+          //console.log("product------",$rootScope.countItem);
       }
-      $scope.removeFromCart = function(product){
-          var index= $scope.cartItems.indexOf(product);
-          $scope.cartItems.splice(index,1);
-          $rootScope.countItem--;
+      $rootScope.removeFromCart = function(product){
+          var index= $rootScope.cartItems.indexOf(product);
+          if(index == -1) return;
+          if($rootScope.cartItems[index].count == 1)
+            $rootScope.cartItems.splice(index,1);
+          else
+            $rootScope.cartItems[index].count--;
+          //console.log("my index",index);
+          //console.log("$scope.cartItems",$scope.cartItems);
+          //if($rootScope>0)
+            $rootScope.countItem--;
       }
+
+      $rootScope.showCart = function () {
+        ngDialog.open({ template: 'modules/core/views/cart.html', className: 'ngdialog-theme-default',scope: $scope });
+        $scope.$on('ngDialog.opened', function (event, $dialog) {
+          $dialog.find('.ngdialog-content').css('width', '60%');
+        });
+      };
       
     })
 /*
@@ -100,6 +121,9 @@
     .controller('singleProductCtrl',function ($scope,ngDialog){
       $scope.clickToOpen = function () {
         ngDialog.open({ template: 'modules/core/views/single-product.html', className: 'ngdialog-theme-default',scope: $scope });
+        $scope.$on('ngDialog.opened', function (event, $dialog) {
+          $dialog.find('.ngdialog-content').css('width', '60%');
+        });
       };
       
     });

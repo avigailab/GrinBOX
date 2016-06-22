@@ -6,7 +6,7 @@
       this.getPosts = function () {
         return Post.find({
           filter: {
-            order: 'created DESC'
+            order: 'created ASC'
           }
         }).$promise;
       };

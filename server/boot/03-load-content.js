@@ -8,7 +8,7 @@ module.exports = function (app) {
   if (app.dataSources.db.name !== 'Memory' && !process.env.INITDB) {
     return;
   }
-
+  /*
   log('Creating categories and products');
 
   var Category = app.models.Category;
@@ -83,6 +83,6 @@ module.exports = function (app) {
       (created) ? log('created Product', data.name)
         : log('found Product', data.name);
     });
-  });
+  });*/
 
 };

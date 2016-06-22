@@ -1,11 +1,11 @@
 
-<div style="margin:11%;">
+<div ng-repeat="product in cartItems" style="margin:11%;">
 	<h1 style="">{{product.name}}</h1><br/>
 	
 		<img class="img " style="width: 40%;" src="http://localhost:3000/api/Containers/products/download/{{product.id}}" /><br/><br/><br/>
 		<h2>Description:</h2><br/>
 		<div style="">{{product.description}}</div><br/>
-		<div style="font-size:1.5em;">Price:{{product.price}}$</div>
-	
+		<div style="font-size:1.5em;">Price:{{product.price}}$</div><br/>
+		<div style="font-size:1.5em;">Number of items:{{product.count}}</div>
 	
 </div>

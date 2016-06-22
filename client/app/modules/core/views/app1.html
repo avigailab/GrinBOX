@@ -29,7 +29,7 @@
                     <li><a id="galleryBtn" href="#/gallery" ng-class="{activeSmall:part == 'gallery'}">Gallery</a></li>
                     <li><a id="aboutBtn" href="#/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
                     <li style="margin-right:0px"><a id="contactBtn" class="active" href="javascript: void(0)" ng-click="openContact()">Contact Us</a></li>
-                    <li><a><i style="margin-right:10px;"class="fa fa-shopping-cart fa-2x" aria-hidden=""></i>{{$root.countItem}}</a></li>
+                    <li><a ng-click="showCart()"><i style="margin-right:10px;"class="fa fa-shopping-cart fa-2x" aria-hidden=""></i>{{$root.countItem}}</a></li>
 
                 </ul>
             </nav>

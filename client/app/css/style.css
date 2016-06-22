@@ -1,4 +1,4 @@
-﻿
+﻿]
 /* general settings */
 html {
   min-height:100%;
@@ -144,12 +144,12 @@ footer .copyright {
 }
 .projectObj .name {
   float:left;
-  font-size:35px;
-  font-weight:100;
+  font-size:25px;
+  font-weight:bold;
   position:absolute;
-  width:25%;
-  padding-top:10px;
+  padding:10px;
   text-align: center;
+  
 }
 .projectObj .img {
   float:right;
@@ -160,7 +160,7 @@ footer .copyright {
 }
 .projectObj .price{
   margin-top:92%;	
-  font-size: 30px;
+  font-size: 15px;
   text-align: center;
 
 }

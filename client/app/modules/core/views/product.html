@@ -2,7 +2,7 @@
 
 	<a class="projectObj one-edge-shadow" style="background-color:{{colors[$index%4]}};height:350px;width:300px;margin-top:5px;border-radius:20px;margin-bottom: 22px;" >	
 		<i style="padding-top:5px;padding-left:5px;"class="fa fa-plus-circle fa-2x" ng-click="addToCart(product)"></i>
-		<i style="padding-top:5px;padding-left:5px;"class="fa fa-minus-circle fa-2x" ng-click="addToCart(product)"></i>
+		<i style="padding-top:5px;padding-left:5px;"class="fa fa-minus-circle fa-2x" ng-click="removeFromCart(product)"></i>
         <div style="padding: 30px 10px 30px;" ng-click="clickToOpen()" {{colors[$index%4]}}>
         	
             <div class="name" {{product.name}} >{{product.name}}</div>
