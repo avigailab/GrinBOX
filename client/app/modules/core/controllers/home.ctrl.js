@@ -11,6 +11,8 @@
     .module('com.module.core')
     .controller('HomeCtrl', function ($scope, $rootScope,Product) {
       $scope.count = {};
+      $rootScope.countItem=0;
+      $scope.cartItems=[];
       $scope.boxes = $rootScope.dashboardBox;
       var proArr =Product.find({}).$promise.then(function(res){
         $scope.products = res;  
@@ -21,7 +23,16 @@
       
       $scope.colors=['#67962C','rgb(63, 145, 210)','#ffcc66','#ff5050'];	
       //console.log("products",proArr);
-      
+      $scope.addToCart =function(product){
+          $scope.cartItems.push(product);
+          $rootScope.countItem++;
+          console.log("product------",$rootScope.countItem);
+      }
+      $scope.removeFromCart = function(product){
+          var index= $scope.cartItems.indexOf(product);
+          $scope.cartItems.splice(index,1);
+          $rootScope.countItem--;
+      }
       
     })
 /*

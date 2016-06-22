@@ -1,6 +1,10 @@
 <div ng-repeat="product in products" ng-controller="singleProductCtrl"  class="kindling col-md-3 isotope stream ng-cloak" style="padding:10px;margin-right: 37px;">
-	<a class="projectObj one-edge-shadow" style="background-color:{{colors[$index%4]}};height:350px;width:300px;margin-top:5px;border-radius:20px;margin-bottom: 22px;" ng-click="clickToOpen()">	
-        <div style="padding: 30px 10px 30px;" {{colors[$index%4]}}>
+
+	<a class="projectObj one-edge-shadow" style="background-color:{{colors[$index%4]}};height:350px;width:300px;margin-top:5px;border-radius:20px;margin-bottom: 22px;" >	
+		<i style="padding-top:5px;padding-left:5px;"class="fa fa-plus-circle fa-2x" ng-click="addToCart(product)"></i>
+		<i style="padding-top:5px;padding-left:5px;"class="fa fa-minus-circle fa-2x" ng-click="addToCart(product)"></i>
+        <div style="padding: 30px 10px 30px;" ng-click="clickToOpen()" {{colors[$index%4]}}>
+        	
             <div class="name" {{product.name}} >{{product.name}}</div>
             <!--img class="img" src="http://nick.mtvnimages.com/nick/games/images/nick-racers-revolution-3d/nick-racers-revolution-3D-4x3.jpg?quality=0.51&maxdimension=600" /-->
             <img class="img" src="http://localhost:3000/api/Containers/products/download/{{product.id}}" />
