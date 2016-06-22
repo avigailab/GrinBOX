@@ -14,7 +14,7 @@
 
     <!-- add javascripts -->
 </head>
-<body>
+<body ng-controller="MainCtrl">
     <header>
         <div class="wrap">
             <!-- logo -->
@@ -28,7 +28,7 @@
                     <li><a id="labBtn" href="#/lab" ng-class="{activeSmall:part == 'lab'}">Lab</a></li>
                     <li><a id="galleryBtn" href="#/gallery" ng-class="{activeSmall:part == 'gallery'}">Gallery</a></li>
                     <li><a id="aboutBtn" href="#/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
-                    <li style="margin-right:0px"><a id="contactBtn" class="active" href="javascript: void(0)" ng-click="showForm()">Contact Us</a></li>
+                    <li style="margin-right:0px"><a id="contactBtn" class="active" href="javascript: void(0)" ng-click="openContact()">Contact Us</a></li>
                 </ul>
             </nav>
         </div>

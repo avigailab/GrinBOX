@@ -1,0 +1,10 @@
+<div ng-repeat="product in products" ng-controller="singleProductCtrl"  class="kindling isotope stream ng-cloak" style="padding:10px;">
+	<a class="projectObj one-edge-shadow" style="background-color:{{colors[$index%4]}};height:350px;width:300px;margin-top:5px;border-radius:20px;margin-bottom: 22px;" ng-click="clickToOpen()">	
+        <div style="padding: 30px 10px 30px;" {{colors[$index%4]}}>
+            <div class="name" {{product.name}} >{{product.name}}</div>
+            <!--img class="img" src="http://nick.mtvnimages.com/nick/games/images/nick-racers-revolution-3d/nick-racers-revolution-3D-4x3.jpg?quality=0.51&maxdimension=600" /-->
+            <img class="img" src="http://localhost:3000/api/Containers/products/download/{{product.id}}" />
+	    <div class="price" {{product.price}}>Price:&nbsp{{product.price}}$ </div>	
+        </div>
+	</a>
+</div>

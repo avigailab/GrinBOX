@@ -1,17 +1,8 @@
 
 
 <div class="page-title">Our Games</div>
-<div style="width:100%" id="isotopeContainer"  data-isotope='' isotope-container="isotope-container" >
-    <product ng-repeat="product in products" ng-controller="singleProductCtrl" isotope-item="isotope-item" class="kindling isotope stream ng-cloak" style="padding:10px;">
-	
-	<a class="projectObj one-edge-shadow" style="background-color:{{colors[$index%4]}};height:350px;width:300px;margin-top:5px;border-radius:20px;margin-bottom: 22px;" ng-click="clickToOpen()">	
-        <div style="padding: 30px 10px 30px;" {{colors[$index%4]}}>
-            <div class="name" {{product.name}} >{{product.name}}</div>
-            <img class="img" src="http://nick.mtvnimages.com/nick/games/images/nick-racers-revolution-3d/nick-racers-revolution-3D-4x3.jpg?quality=0.51&maxdimension=600" />
-            <!--img class="img" src="uploads/products/productImage{{product.id}}.gif" /-->
-	    <div class="price" {{product.price}}>Price:&nbsp{{product.price}}$ </div>	
-        </div>
-	</a>
+<div style="width:100%" id="isotopeContainer"  >
+    <product >
     </product>
 
     
