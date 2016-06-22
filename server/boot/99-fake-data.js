@@ -5,7 +5,7 @@ var faker = require('faker');
 var Promise = require('bluebird');
 
 module.exports = function (app) {
-
+/*
   if (app.dataSources.db.name !== 'Memory' && !process.env.INITDB) {
     return;
   }
@@ -47,5 +47,5 @@ module.exports = function (app) {
   Promise.all(promises).then(function () {
     log('Creating fake data done!');
   }).catch();
-
+*/
 };

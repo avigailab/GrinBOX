@@ -15,12 +15,12 @@
       var proArr =Product.find({}).$promise.then(function(res){
         $scope.products = res;  
         res.forEach(function(product){
-          console.log("one product",product);
+          //console.log("one product",product);
         });
       });
       
       $scope.colors=['#67962C','rgb(63, 145, 210)','#ffcc66','#ff5050'];	
-      //console.log("products",proArr);
+     
       
       
     })
@@ -89,6 +89,9 @@
     .controller('singleProductCtrl',function ($scope,ngDialog){
       $scope.clickToOpen = function () {
         ngDialog.open({ template: 'modules/core/views/single-product.html', className: 'ngdialog-theme-default',scope: $scope });
+        $scope.$on('ngDialog.opened', function (event, $dialog) {
+          $dialog.find('.ngdialog-content').css('width', '60%');
+        });
       };
       
     });
