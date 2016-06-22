@@ -1,4 +1,4 @@
-<div ng-repeat="product in products" ng-controller="singleProductCtrl"  class="kindling isotope stream ng-cloak" style="padding:10px;">
+<div ng-repeat="product in products" ng-controller="singleProductCtrl"  class="kindling col-md-3 isotope stream ng-cloak" style="padding:10px;margin-right: 37px;">
 	<a class="projectObj one-edge-shadow" style="background-color:{{colors[$index%4]}};height:350px;width:300px;margin-top:5px;border-radius:20px;margin-bottom: 22px;" ng-click="clickToOpen()">	
         <div style="padding: 30px 10px 30px;" {{colors[$index%4]}}>
             <div class="name" {{product.name}} >{{product.name}}</div>

@@ -1,4 +1,4 @@
-<span ng-repeat="product in products" ng-controller="singleProductCtrl" isotope-item="isotope-item" class="kindling isotope stream ng-cloak" style="padding:10px;display:inline">
+<span ng-repeat="product in products" ng-controller="singleProductCtrl" isotope-item="isotope-item" class="col-md-3 kindling isotope stream ng-cloak" style="padding:30px;display:inline">
 	<a class="projectObj one-edge-shadow" style="background-color:{{colors[$index%4]}};height:350px;width:300px;margin-top:5px;border-radius:20px;margin-bottom: 22px;" ng-click="clickToOpen()">	
         <div style="padding: 30px 10px 30px;" {{colors[$index%4]}}>
             <div class="name" {{product.name}} >{{product.name}}</div>
@@ -7,4 +7,4 @@
 	    <div class="price" {{product.price}}>Price:&nbsp{{product.price}}$ </div>	
         </div>
 	</a>
-</spam>
+</span>
