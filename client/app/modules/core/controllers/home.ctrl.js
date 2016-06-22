@@ -12,9 +12,17 @@
     .controller('HomeCtrl', function ($scope, $rootScope,Product) {
       $scope.count = {};
       $scope.boxes = $rootScope.dashboardBox;
-      $scope.products=Product.find({});
+      var proArr =Product.find({}).$promise.then(function(res){
+        $scope.products = res;  
+        res.forEach(function(product){
+          console.log("one product",product);
+        });
+      });
+      
       $scope.colors=['#67962C','rgb(63, 145, 210)','#ffcc66','#ff5050'];	
-      console.log("product",$scope.products);	
+      //console.log("products",proArr);
+      
+      
     })
 /*
     .controller('uploadController', function($scope, FileUploader) {
@@ -45,8 +53,8 @@
         };
         uploader.onAfterAddingFile = function(fileItem) {
             console.info('onAfterAddingFile', fileItem);
-           // console.log("my scope",$rootScope.currentProductId);
-            fileItem.file.name = "productImage"+$rootScope.currentProductId+"gif";
+            console.log("my scope",$rootScope.currentProductId);
+            fileItem.file.name = $rootScope.currentProductId;
         };
         uploader.onAfterAddingAll = function(addedFileItems) {
             //console.info('onAfterAddingAll', addedFileItems);
@@ -82,7 +90,7 @@
       $scope.clickToOpen = function () {
         ngDialog.open({ template: 'modules/core/views/single-product.html', className: 'ngdialog-theme-default',scope: $scope });
       };
-
+      
     });
 
 })();

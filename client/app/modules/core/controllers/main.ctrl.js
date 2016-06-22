@@ -13,14 +13,16 @@
    **/
   angular
     .module('com.module.core')
-    .controller('MainCtrl', function ($scope, $rootScope, $state, AppAuth, CoreService, User, gettextCatalog) {
+    .controller('MainCtrl', function ($scope, $rootScope, $state, AppAuth, CoreService, User, gettextCatalog,ngDialog) {
       AppAuth.ensureHasCurrentUser(function () {
         //This call also serves to redirect a user to the login screen, via the interceptor in users.auth.js, if they are not authenticated.
         $scope.currentUser = User.getCurrent();
       });
 
       $scope.menuoptions = $rootScope.menu;
-
+      $scope.openContact = function () {
+        ngDialog.open({ template: 'modules/core/views/contact.html', className: 'ngdialog-theme-default',scope: $scope });
+      };
       $scope.logout = function () {
         AppAuth.logout(function () {
           CoreService.toastSuccess(gettextCatalog.getString('Logged out'),
